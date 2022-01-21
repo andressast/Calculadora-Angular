@@ -1,0 +1,41 @@
+<div class="calculatora card">
+
+  <input type="text" class="calculatora-display" id="display" name="display" [value]="display" readonly>
+
+  <div class="calculatora-btn">
+
+    <button type="button" class="operator btn-warning" (click)="definirOperacao('+')" id="btnSoma">+</button>
+    <button type="button" class="operator btn-warning" (click)="definirOperacao('-')" id="btnSubtracao">-</button>
+    <button type="button" class="operator btn-warning" (click)="definirOperacao('*')" id="btnMIltiplicacao">*</button>
+    <button type="button" class="operator btn-warning" (click)="definirOperacao('/')" id="btnDivisao">/</button>
+
+    <button type="button" class="btn-light" (click)="adicionaNumero('7')" id="btn7">7</button>
+    <button type="button" class="btn-light" (click)="adicionaNumero('8')" id="btn8">8</button>
+    <button type="button" class="btn-light" (click)="adicionaNumero('9')" id="btn9">9</button>
+
+
+    <button type="button" class="btn-light" (click)="adicionaNumero('4')" id="btn4">4</button>
+    <button type="button" class="btn-light" (click)="adicionaNumero('5')" id="btn5">5</button>
+    <button type="button" class="btn-light" (click)="adicionaNumero('6')" id="btn6">6</button>
+
+
+    <button type="button" class="btn-light" (click)="adicionaNumero('1')" id="btn1">1</button>
+    <button type="button" class="btn-light" (click)="adicionaNumero('2')" id="btn2">2</button>
+    <button type="button" class="btn-light" (click)="adicionaNumero('3')" id="btn3">3</button>
+
+
+    <button type="button" class="btn-light" (click)="adicionaNumero('0')" id="btn0">0</button>
+    <button type="button" class="btn-light" (click)="adicionaNumero('.')" id="btnDecimal">.</button>
+    <button type="button" class="btn-warning" (click)="definirOperacao('√')" id="btnRaiz">&radic;</button>
+
+
+    <button type="button" class="equal-sign operator btn-success" (click)="calcular()" id="btnCalcular">=</button>
+
+
+    <button type="button" class="btn-warning" (click)="definirOperacao('²')" id="btnElev2">x&#x00B2;</button>
+    <button type="button" class="btn-warning" (click)="definirOperacao('³')" id="btnElev3">x&#x00B3;</button>
+    <button type="button" class="btn-warning" (click)="adicionaPi()" id="btnPi">&pi;</button>
+    <button type="button" (click)="limpar()" class="all-clear function btn-primary btn-sm">C</button>
+
+  </div>
+</div>
